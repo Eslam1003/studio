@@ -64,7 +64,7 @@
             this.list.BackgroundColor = System.Drawing.Color.Aqua;
             this.list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.list.GridColor = System.Drawing.Color.Brown;
-            this.list.Location = new System.Drawing.Point(224, 66);
+            this.list.Location = new System.Drawing.Point(224, 124);
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(240, 150);
             this.list.TabIndex = 5;
