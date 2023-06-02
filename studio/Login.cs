@@ -17,25 +17,50 @@ namespace studio
         {
             InitializeComponent();
             con = new DB();
-            ShowData();
+            
         }
 
-            private void ShowData()
+        private string UserName, Password;
+        DataTable users ;
+        public void ShowData()
         {
-            String Query = "SELECT * FROM users";
-           // list.DataSource = con.GetData(Query);
+            string Query = $"SELECT * FROM users where user_name='{UserName}'AND password='{Password}'";
+            users = con.GetData(Query);
+            dataGridView1.DataSource = users;
         }
+
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-
+            UserName = Login_UserName.Text;
+            Password = Login_UserName.Text;
+           
+           
+           // Main main = new Main();
+            //main.Show();
+            //this.Hide();
         }
 
         private void UserNameText_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -44,5 +69,6 @@ namespace studio
         {
             Application.Exit();
         }
+       
     }
 }
