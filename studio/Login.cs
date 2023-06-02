@@ -63,15 +63,18 @@ namespace studio
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Login_Clear_Click(object sender, EventArgs e)
+        {
+            Login_UserName.Text = "";
+            Login_Password.Text = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -38,11 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Login_Clear = new System.Windows.Forms.Button();
             this.studioDataSet1 = new studio.studioDataSet();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studioDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Login_loginBtn
@@ -50,7 +48,7 @@
             this.Login_loginBtn.FlatAppearance.BorderSize = 2;
             this.Login_loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_loginBtn.ForeColor = System.Drawing.Color.White;
-            this.Login_loginBtn.Location = new System.Drawing.Point(549, 230);
+            this.Login_loginBtn.Location = new System.Drawing.Point(522, 230);
             this.Login_loginBtn.Name = "Login_loginBtn";
             this.Login_loginBtn.Padding = new System.Windows.Forms.Padding(1);
             this.Login_loginBtn.Size = new System.Drawing.Size(100, 28);
@@ -61,7 +59,7 @@
             // 
             // Login_UserName
             // 
-            this.Login_UserName.Location = new System.Drawing.Point(429, 137);
+            this.Login_UserName.Location = new System.Drawing.Point(402, 137);
             this.Login_UserName.Name = "Login_UserName";
             this.Login_UserName.Size = new System.Drawing.Size(162, 20);
             this.Login_UserName.TabIndex = 1;
@@ -70,7 +68,7 @@
             // Login_Password
             // 
             this.Login_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Login_Password.Location = new System.Drawing.Point(429, 178);
+            this.Login_Password.Location = new System.Drawing.Point(402, 178);
             this.Login_Password.Name = "Login_Password";
             this.Login_Password.Size = new System.Drawing.Size(162, 20);
             this.Login_Password.TabIndex = 2;
@@ -79,7 +77,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::studio.Properties.Resources._lock;
-            this.pictureBox2.Location = new System.Drawing.Point(616, 178);
+            this.pictureBox2.Location = new System.Drawing.Point(589, 178);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,7 +87,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::studio.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(616, 137);
+            this.pictureBox1.Location = new System.Drawing.Point(589, 137);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -114,7 +112,7 @@
             this.splitter1.BackColor = System.Drawing.Color.White;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(319, 362);
+            this.splitter1.Size = new System.Drawing.Size(305, 362);
             this.splitter1.TabIndex = 6;
             this.splitter1.TabStop = false;
             // 
@@ -124,38 +122,31 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(28, 24);
+            this.label1.Location = new System.Drawing.Point(31, 159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 39);
             this.label1.TabIndex = 7;
             this.label1.Text = "careem studio";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Login_Clear
             // 
             this.Login_Clear.FlatAppearance.BorderSize = 2;
             this.Login_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Clear.ForeColor = System.Drawing.Color.White;
-            this.Login_Clear.Location = new System.Drawing.Point(429, 230);
+            this.Login_Clear.Location = new System.Drawing.Point(402, 230);
             this.Login_Clear.Name = "Login_Clear";
             this.Login_Clear.Padding = new System.Windows.Forms.Padding(1);
             this.Login_Clear.Size = new System.Drawing.Size(100, 28);
             this.Login_Clear.TabIndex = 8;
             this.Login_Clear.Text = "مسح البيانات";
             this.Login_Clear.UseVisualStyleBackColor = true;
+            this.Login_Clear.Click += new System.EventHandler(this.Login_Clear_Click);
             // 
             // studioDataSet1
             // 
             this.studioDataSet1.DataSetName = "studioDataSet";
             this.studioDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 108);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Login
             // 
@@ -163,7 +154,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(742, 362);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Login_Clear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.splitter1);
@@ -180,7 +170,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studioDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +187,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Login_Clear;
         private studioDataSet studioDataSet1;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
