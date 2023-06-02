@@ -23,11 +23,26 @@ namespace studio
             private void ShowData()
         {
             String Query = "SELECT * FROM users";
-            list.DataSource = con.GetData(Query);
+           // list.DataSource = con.GetData(Query);
         }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UserNameText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
